@@ -2,7 +2,7 @@
 .SYNOPSIS
     This script migrates Azure Windows Virtual Desktop (WVD) session hosts to Azure dedicated hosts.
 .DESCRIPTION
-    This scripts moved WVD session hosts in a hostpool to an already deployed Azure Dedicated Host Group.
+    This scripts moves WVD session hosts in a hostpool to an already deployed Azure Dedicated Host Group.
     The script currently requires the Dedicated Host Group to already exist, but it will provision additional hosts
     when existing hosts are at capacity.
 
