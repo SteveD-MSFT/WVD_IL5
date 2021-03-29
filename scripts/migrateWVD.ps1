@@ -193,7 +193,7 @@ foreach ($VM in $eligibleVMs) {
       Write-Host "-== Moving $VMname to $dhName ==-"
       $myVM.Host.Id = $myDH.Id
 
-      Update-AzVM -ResourceGroupName $resourceGroup -VM $myVM 
+      Update-AzVM -ResourceGroupName $resourceGroupName -VM $myVM 
       Update-AzWvdSessionHost -ResourceGroupName $resourceGroupName -HostPoolName $wvdHostPool -name $DNSname -AllowNewSession:$true
 
       Write-Host "STARTING: $VMname"
